@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: rgb(0, 26, 255);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkgreen;
+        }
+
+        input[type="reset"]:hover {
+            background-color: rgb(0, 132, 139);
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+    Name:
+    <input type="text" name="name">
+
+    Email:
+    <input type="email" name="email">
+
+    Password:
+    <input type="password" name="password">
+
+    Age:
+    <input type="number" name="age">
+
+    Mobile number:
+    <input type ="tel" name="Mobile number">
+    Gender:
+    <input type="radio" name="gender"> Male 
+    <input type="radio" name="gender"> Female
+
+    Hobbies:
+    <input type="checkbox"> Reading
+    <input type="checkbox"> Sports
+    <input type="checkbox"> Music
+
+    Date of Birth:
+    <input type="date">
+    
+
+    Upload Resume:
+    <input type="file">
+
+    Course:
+    <select>
+        <option>BCA</option>
+        <option>BSc</option>
+        <option>BTech</option>
+    </select>
+
+    Address:
+    <textarea rows="4"></textarea>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear">
+
+</form>
+
+</body>
+</html>
